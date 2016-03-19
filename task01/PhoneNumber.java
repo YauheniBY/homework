@@ -1,10 +1,14 @@
 package task01;
 
+
 public class PhoneNumber {
-    private int number=0;
+    private int number = 0;
     private String type = null;
-    public PhoneNumber(){};
-    public PhoneNumber(String type,int number){
+
+    public PhoneNumber() {
+    }
+
+    public PhoneNumber(String type, int number) {
         this.type = type;
         this.number = number;
     }
@@ -24,7 +28,8 @@ public class PhoneNumber {
     public String getType() {
         return type;
     }
-    public void ShowPhoneNumber(){
-        System.out.print(" Type: "+getType()+". Phone number: "+getNumber());
+
+    public void ShowPhoneNumber() {
+        System.out.print(" Type: " + getType() + ". Phone number: " + getNumber());
     }
 }
